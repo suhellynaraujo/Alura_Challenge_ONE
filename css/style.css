@@ -16,6 +16,13 @@ body{
     gap: 40px;
 }  
 
+#ladoEsquerdo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+
+}
+
 #ladoDireito{
     background: #FFFFFF;
     top: 40px;
