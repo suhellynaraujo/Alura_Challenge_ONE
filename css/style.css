@@ -9,6 +9,12 @@ body{
 
 
 }
+#logoAlura{
+    margin-bottom: auto;
+    margin-top: 40px;
+    left: 40px;
+    gap: 40px;
+}  
 
 #ladoDireito{
     background: #FFFFFF;
