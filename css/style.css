@@ -2,6 +2,7 @@ body{
     background-color: #F3F5FC;
     
 }
+
 #conteudo{   
     display: flex;
     align-items: center;
@@ -16,9 +17,11 @@ body{
     gap: 40px;
 }  
 
+
 #ladoEsquerdo{
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+    margin-left: 200px;  
 
 }
 
@@ -45,15 +48,15 @@ body{
   
 }
 
-#ladoDireito{
-    background: #FFFFFF;
-    top: 40px;
-    width: 400px;
-    height: 100vh;
-    left: 1000px;
-    border-radius: 32px;
+#exclamation{
+    display: flex;
+    align-items: center;
+       
 }
 
+#rodape{
+    left: 240px;
+}
 
 #cript{
     background: #0A3871;
@@ -72,4 +75,16 @@ body{
     color: #0A3871;
     padding: 20px;
     width: 320px;
+}
+
+
+#ladoDireito{
+    background: #FFFFFF;
+    width: 400px;
+    height: 100vh;
+    left: 1000px;
+    border-radius: 32px;
+    margin-top: 30px;
+  
+  
 }
