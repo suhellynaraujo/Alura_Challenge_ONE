@@ -3,14 +3,14 @@ function TextoTela(tag, texto){
     campo.innerHTML = texto;
 
 }
-textoTela('textarea', 'Digite seu texto');
-textoTela('h4', 'Apenas letras minúsculas e sem acento.');
+TextoTela('textarea', 'Digite seu texto');
+TextoTela('h4', 'Apenas letras minúsculas e sem acento.');
 
 function Criptografia(){
-   textoTela('textarea', 'texto criptografado');
+   TextoTela('textarea', 'texto criptografado');
 }
 
 function Descriptografia(){   
-    textoTela('textarea', 'texto descriptografado');
+    TextoTela('textarea', 'texto descriptografado');
     
 }
