@@ -21,7 +21,7 @@ body{
 }
 
 #logoAlura{  
-    padding: 5% 0% 0% 5%;
+    padding: 2% 0% 0% 1%;
     gap: 40px;
     
 } 
@@ -134,9 +134,14 @@ h4{
 #conteudo__ladoDireito__titulo{
     text-align: center;
     padding: 10px;
+    font-family: var(--fonte);
+    font-weight: 600;
 }
 
 #conteudo__ladoDireito__paragrafo{
     text-align: center;
     padding: 10px;
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 14px;
 }
