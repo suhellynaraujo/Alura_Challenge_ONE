@@ -9,22 +9,23 @@ TextoTela('h4', 'Apenas letras minúsculas e sem acento.');
 TextoTela('h1', 'Nenhuma mensagem encontrada');
 TextoTela('p', 'Digite um texto que você deseja criptografar ou descriptografar.');
 
-const textArea = document.querySelector(".text-area");
-const mensagem = document.querySelector(".mensagem");
+let textArea = document.querySelector('#conteudo__ladoEsquerdo__texto__digiteTexto');
+let mensagem = document.querySelector("#conteudo__ladoDireito__paragrafo");
+console.log(textArea);
+console.log(mensagem);
 
-function Criptografia(){ 
-    const textoEncriptado = encriptar(textArea.value);
+//A letra "e" é convertida para "enter"
+//A letra "i" é convertida para "imes"
+//A letra "a" é convertida para "ai"
+//A letra "o" é convertida para "ober"
+//A letra "u" é convertida para "ufat"
+
+function Criptografia(){
+    let textoEncriptado = encriptar(textArea.value);
     mensagem.value = textoEncriptado;
-    textArea.value = "";
-}
-
-function Descriptografia(){   
-    const textoDesencriptado = desencriptar(textArea.value);
-    mensagem.value = textoDesencriptado;
     textArea.value = "";
     
 }
-
 
 function encriptar(stringEncriptada) {
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
@@ -37,6 +38,12 @@ function encriptar(stringEncriptada) {
     }
 
     return stringEncriptada;
+}
+
+function Descriptografia(){
+    let textoDesencriptado = desencriptar(textArea.value);
+    mensagem.value = textoDesencriptado;
+    textArea.value = "";
 }
 
 function desencriptar(stringDesencriptada) {
