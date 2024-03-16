@@ -9,15 +9,14 @@
     --cor-principal: #F3F5FC;
     --cor-segundaria: #0A3871;
     --cor-terciaria: #ffffff;
-    --cor-botao-cinza: #D8DFE8;
+    --cor-botao-cinza: #F3F5FC;
     --fonte: "Montserrat", sans-serif;
    
 }
 
 body{
     background-color: var(--cor-principal);   
-    display: flex;
-    justify-content: space-between; 
+   
 }
 
 #logoAlura{  
@@ -29,7 +28,8 @@ body{
 #conteudo{
     display: flex;
     align-items: center;
-    margin-right: 300px;
+    justify-content: space-around;
+    padding: 0% 2% 0% 5%;
     
 }
 
@@ -37,7 +37,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 200px;
+    padding: 0% 5% 0% 0%;
 }
 
 #conteudo__ladoEsquerdo__texto__digiteTexto{
@@ -54,6 +54,7 @@ body{
     height: 400px;
     padding-left: 20px;
     resize: none;
+    padding: 0% 0% 40% 0%;
 
 }
 
@@ -124,16 +125,25 @@ h4{
 #conteudo__ladoDireito{
  background-color: var(--cor-terciaria);
  border-radius: 20px;
- height: 800px;
- width: 300px;
+ height: 900px;
+ width: 400px;
  padding: 0.626rem;
  margin: 30px;
  display: flex;
  flex-direction:column;
- justify-content: center; 
+ justify-content: space-around; 
  box-shadow: 5px 5px 5px 3px #0a387167;
+ text-align: center;
 
 }
+
+#conteudo__ladoDireito__imagem{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; 
+    height: auto;
+}
+
 #conteudo__ladoDireito__titulo{
     text-align: center;
     padding: 10px;
@@ -141,19 +151,57 @@ h4{
     font-weight: 600;
 }
 
-#conteudo__ladoDireito__paragrafo{
+#conteudo__ladoDireito__texto{
     text-align: center;
     padding: 10px;
     font-family: var(--fonte);
     font-weight: 400;
     font-size: 14px;
-    background-color: var(--cor-terciaria);   
-    color: var(--cor-segundaria);
-    border: 0 none;
-    outline: 0;     
-    font-family: var(--fonte);   
-    margin-top: 60px;
-    margin-right: 50px;   
-    padding-left: 20px;
-    resize: none;
+
+}
+
+@media(max-width: 768px ){
+    body{
+       flex-direction: column;
+       padding: 2% 0% 0% 1%;
+    }
+    #conteudo{
+       flex-direction: column;
+    }
+
+    #conteudo__ladoDireito{
+     width: 688px;
+     height: 133px;
+     box-shadow: 5px 5px 5px 5px #0a387128;
+    }
+    
+    #conteudo__ladoDireito__imagem{
+        display: none;
+    }
+
+}
+
+@media(max-width: 425px){
+   
+     #conteudo{
+        flex-direction: column;
+
+     }
+
+     #conteudo__ladoEsquerdo__texto__digiteTexto{
+        text-align: center;
+     }
+    
+    #conteudo__ladoEsquerdo__exclamacao{
+        justify-content: center;
+       }
+     #conteudo__ladoEsquerdo__botoes{
+           flex-direction: column;
+           align-items: center;
+       }
+       #conteudo__ladoDireito{
+        width: 327px;
+        height: 186px;
+        box-shadow: 5px 5px 5px 5px #0a387128;
+       }
 }
