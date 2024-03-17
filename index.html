@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codificador e Decodificador de texto</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     </header>
     <main id="conteudo">
         <section id="conteudo__ladoEsquerdo">
-            <textarea id="conteudo__ladoEsquerdo__texto__digiteTexto"></textarea>
+            <textarea id="conteudo__ladoEsquerdo__texto__TextoDeEntrada"  placeholder="Digite seu texto" autofocus></textarea>
             <div id="conteudo__ladoEsquerdo__exclamacao">
                 <img id="exclamacao" src="/assets/bi_exclamation-circle-fill.png" alt="imagem exclamação">
                 <h4></h4>
@@ -25,17 +25,19 @@
             </div>
         </section>
         <section id="conteudo__ladoDireito">
-            <div>
-
+            <textarea id="conteudo__ladoEsquerdo__texto__TextoDeSaida" cols="30" rows="30" contenteditable="true" disabled></textarea>
+            <button id="botaoCopiar" onclick="copiar()">Copiar</button>
+            <div id="mensagem">
                 <img id="conteudo__ladoDireito__imagem" src="/assets/High quality products 1 1.png" alt="imagem da direita">
                 <h1 id="conteudo__ladoDireito__titulo"></h1>
                 <p id="conteudo__ladoDireito__texto">Digite um texto que você deseja criptografar ou descriptografar</p>           
             </div>
-           <!-- <button id="conteudo__ladoDireito__botao__copiar" onclick="btnCopiar()">Criptografar</button>-->
         </section>
     </main>
-    
-    <script src="/js/app.js"></script>
+    <footer id="rodape">
+        <p>Desenvolvido por Suhellyn Araujo, através do Programa ONE + Alura</p>
+    </footer>
+    <script src="/js/teste2.js"></script>
 </body>
 
 </html>

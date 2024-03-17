@@ -15,9 +15,8 @@
 }
 
 body{
-    background-color: var(--cor-principal);   
-   
-}
+    background-color: var(--cor-principal); 
+ }
 
 #logoAlura{  
     padding: 2% 0% 0% 1%;
@@ -40,7 +39,7 @@ body{
     padding: 0% 5% 0% 0%;
 }
 
-#conteudo__ladoEsquerdo__texto__digiteTexto{
+#conteudo__ladoEsquerdo__texto__TextoDeEntrada {
     background-color: var(--cor-principal);   
     color: var(--cor-segundaria);
     border: 0 none;
@@ -55,7 +54,6 @@ body{
     padding-left: 20px;
     resize: none;
     padding: 0% 0% 40% 0%;
-
 }
 
 #conteudo__ladoEsquerdo__exclamacao{
@@ -134,6 +132,7 @@ h4{
  justify-content: space-around; 
  box-shadow: 5px 5px 5px 3px #0a387167;
  text-align: center;
+ align-items: center;
 
 }
 
@@ -160,11 +159,48 @@ h4{
 
 }
 
+#conteudo__ladoEsquerdo__texto__TextoDeSaida{
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: var(--cor-terciaria);
+    display: none;
+    font-family: var(--fonte);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#botaoCopiar {
+    padding: 1.26rem;
+    width: 320px;
+    border-radius: 1.5rem;
+    background-color: white;
+    border: 1px solid var(--cor-segundaria);
+    display: none;
+    cursor: pointer;   
+}
+
+#botaoCopiar:hover{
+    box-shadow: 5px 5px 5px 5px #0a387128;
+}
+
+#rodape {
+    position: relative;
+    bottom: 0;
+    color: #495057;   
+    text-align: center;
+    width: 100%;
+    font-family: var(--fonte);
+    height: 40px;
+  
+}
+
 @media(max-width: 768px ){
     body{
        flex-direction: column;
        padding: 2% 0% 0% 1%;
     }
+
     #conteudo{
        flex-direction: column;
     }
@@ -179,29 +215,86 @@ h4{
         display: none;
     }
 
+    #botaoCopiar {
+        padding: 1rem;
+        width: 200px 
+    }
 }
 
-@media(max-width: 425px){
+@media(max-width: 425px){ 
    
      #conteudo{
         flex-direction: column;
 
      }
 
-     #conteudo__ladoEsquerdo__texto__digiteTexto{
-        text-align: center;
+     #conteudo__ladoEsquerdo{
+        max-width: 100%;
+        word-wrap: break-word; 
+        text-align: center; 
+        margin-top: 20px
+     }
+
+     #conteudo__ladoEsquerdo__texto__TextoDeEntrada{
+        width: calc(100% - 40px);
+        margin-right: 0; 
+        height: 200px; 
+       text-align: center;
      }
     
     #conteudo__ladoEsquerdo__exclamacao{
         justify-content: center;
        }
-     #conteudo__ladoEsquerdo__botoes{
+
+    #conteudo__ladoEsquerdo__botoes{
            flex-direction: column;
            align-items: center;
        }
-       #conteudo__ladoDireito{
+    #conteudo__ladoDireito{
         width: 327px;
         height: 186px;
         box-shadow: 5px 5px 5px 5px #0a387128;
        }
+        
+    #rodape{
+        padding: 1rem;
+    }
+
+
+       
+}
+
+
+@media(max-width: 320px){  
+
+    #conteudo {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px; 
+    }
+
+    #conteudo__ladoEsquerdo {
+        max-width: 100%;
+        word-wrap: break-word; 
+        text-align: center; 
+        margin-top: 20px; 
+    }
+
+
+    #conteudo__ladoEsquerdo__exclamacao {
+        margin-bottom: 10px;
+    }
+
+    #conteudo__ladoEsquerdo__botoes {
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    #conteudo__ladoDireito {
+        width: calc(100% - 60px); /* Largura ajustada */
+        height: 186px;
+        margin: 20px; /* Espaçamento ao redor */
+    }
+   
+
 }
