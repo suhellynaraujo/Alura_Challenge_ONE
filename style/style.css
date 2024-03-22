@@ -194,15 +194,22 @@ h4{
     height: 40px;
   
 }
+@media(min-width: 2560px){
+    
+    #rodape {
+        position: absolute;
+    }
+}
 
 @media(max-width: 768px ){
     body{
        flex-direction: column;
-       padding: 2% 0% 0% 1%;
+       padding: 2% 10% 0% 10%;
     }
 
     #conteudo{
        flex-direction: column;
+       
     }
 
     #conteudo__ladoDireito{
@@ -225,7 +232,6 @@ h4{
    
      #conteudo{
         flex-direction: column;
-
      }
 
      #conteudo__ladoEsquerdo{
@@ -264,7 +270,6 @@ h4{
        
 }
 
-
 @media(max-width: 320px){  
 
     #conteudo {
@@ -284,10 +289,12 @@ h4{
     #conteudo__ladoEsquerdo__exclamacao {
         margin-bottom: 10px;
     }
-
+    h4{
+        font-size: 0.65rem;
+    }
     #conteudo__ladoEsquerdo__botoes {
-        margin-bottom: 20px;
-        margin-left: 20px;
+        margin-bottom: 30px;
+        margin-left: 30px;
     }
 
     #conteudo__ladoDireito {
