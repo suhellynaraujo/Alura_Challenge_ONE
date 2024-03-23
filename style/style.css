@@ -261,6 +261,10 @@ h4{
         height: 186px;
         box-shadow: 5px 5px 5px 5px #0a387128;
        }
+     #conteudo__ladoEsquerdo__texto__TextoDeSaida{
+        width: calc(100% - 60px); /* Largura ajustada */
+        height: 186px;
+    }
         
     #rodape{
         padding: 1rem;
@@ -342,5 +346,9 @@ h4{
         margin: 20px; /* Espaçamento ao redor */
     }
    
+    #botaoCopiar {
+        padding: 1rem;
+        width: 100px 
+    }
 
 }
