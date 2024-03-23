@@ -229,8 +229,8 @@ h4{
 }
 
 
-@media(min-width: 425px ){
-    #conteudo{
+@media(max-width: 690px ){
+   #conteudo{
         flex-direction: column;
      }
 
